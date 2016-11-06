@@ -5,7 +5,7 @@ let rootPath = path.normalize(path.join(__dirname, '/../../'))
 module.exports = {
   development: {
     rootPath: rootPath,
-    db: 'mongodb://localhost:27017/some-express-db',
+    db: 'mongodb://gancho:gancho@ds141937.mlab.com:41937/e-ticket',
     port: 1337
   },
   production: {

@@ -1,0 +1,17 @@
+
+extends ../shared/layout
+
+
+
+block main-content
+  h1 All codes
+
+  div #{allCodes}
+  div All Avaible
+  each code in allCodes.allAvaible
+    li= code
+
+  div All Reserved
+  each code in allCodes.allAvaible
+    if code.isReserved
+      li= code

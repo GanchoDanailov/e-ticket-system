@@ -1,0 +1,20 @@
+
+extends ../shared/layout
+
+
+
+block main-content
+  h1 Add code
+  form(method="post" action="/codes/create")
+    label(for="code") Code
+    input(type="text" name="code" id="code" minlength="5" value=code)
+    br
+    input(type="radio", name="reuseble", value="0" checked="checked")
+    | non-reuseble
+    input(type="radio", name="reuseble", value="1")
+    | reuseble
+    br
+    label(for="limit") Limit
+    input(type="number",name="limit", id="limit", min="1", value="1")
+    br
+    input(type="submit" value="Create")
